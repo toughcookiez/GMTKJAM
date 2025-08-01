@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
@@ -12,14 +14,11 @@ public class PlayerController : MonoBehaviour
     //List of all Objects that were Spawned by the player
     private List<GameObject> spawnedObjects = new List<GameObject>();
 
-    //Number of objects that are deleted with the randomDelete Event
-    public int deleteObjectNumber;
-
     public bool isAutoRunner = false;
     public float moveSpeed = 100;
     public float jumpForce = 300;
     public float superJumpForce = 500;
-        
+
     public float health = 3;
     public float maxHealth = 3;
 
@@ -54,19 +53,33 @@ public class PlayerController : MonoBehaviour
     private float jumpCooldownTime = 0.2f;
     private bool isJumpCooldown = false;
 
-  
+    //Checks if player has already jumped in this loop. if player can beat loop without jumping
+    //then probability for randomDelete will be increased
+    private bool hasJumpedInThisLoop = false;
+
+
 
     public float destroyJumpProbability;
     public float emptyJumpProbability;
 
     //Probability that some objects get destroyed when player reaches the goal
-    public float GoalDestroysObjectsProbability;
+    public float goalDestroysObjectsProbability;
+
+    //the probability that was set at the beginning
+    public float originalGoalDestroysObjectsProbability;
+
+    public int deleteObjectNumber = 4;
 
     private Vector2 startPos;
 
     public Rigidbody2D rb;
 
     private PrefabImage prefabImage;
+
+    //Radius in which objects are destroyed during DestroyJump
+    private BoxCollider2D destroyRadius;
+
+    public int pointsPerDestroyedObject = 2;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -77,35 +90,39 @@ public class PlayerController : MonoBehaviour
 
         prefabImage = GameObject.Find("PrefabImage").GetComponent<PrefabImage>();
 
-        transform.Find("DestroyRadius").GetComponent<BoxCollider2D>().enabled = false;
 
-        groundCheckPosition = transform.Find("GroundCheck").position;
+        destroyRadius = transform.Find("DestroyRadius").GetComponent<BoxCollider2D>();
+
+        destroyRadius.enabled = false;
+
+        originalGoalDestroysObjectsProbability = goalDestroysObjectsProbability;
+
 
         ChooseNextCard();
 
-        
+
     }
 
-    
+
 
     // Update is called once per frame
     void Update()
     {
 
-       
+
 
         if (!isAutoRunner)
         {
 
             //Move Left/Right
-            if(Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
-                rb.linearVelocity =  new Vector2(-moveSpeed , rb.linearVelocity.y);
-                    
+                rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
+
             }
             if (Input.GetKey(KeyCode.D))
             {
-                rb.linearVelocity = new Vector2(moveSpeed , rb.linearVelocity.y);
+                rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
 
             }
 
@@ -115,7 +132,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             //If is autorunner move right automatically
-            rb.linearVelocity = new Vector2(-moveSpeed , rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
 
 
 
@@ -123,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
 
         //Jump
-        
+
         if (IsGrounded() && !isJumpCooldown && Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
@@ -139,6 +156,13 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        //Respawn 
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+
+            PlayerHit();
+            RespawnPlayer();
+        }
 
         //if player falls into pit they die
         if (rb.position.y < deathHeight)
@@ -154,7 +178,7 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
             canDoubleJump = false;
-            transform.Find("DestroyRadius").GetComponent<BoxCollider2D>().enabled = false;
+            destroyRadius.enabled = false;
             //destroyJumpActive = false;
         }
     }
@@ -171,7 +195,8 @@ public class PlayerController : MonoBehaviour
     //Get hit by obstacle
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Harmful"))
+        //Only get hit if not using DestroyJump
+        if (other.gameObject.CompareTag("Harmful") && !destroyRadius.enabled)
         {
             PlayerHit();
         }
@@ -186,10 +211,12 @@ public class PlayerController : MonoBehaviour
         UseCurrentCard();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
+        hasJumpedInThisLoop = true;
+
         isJumpCooldown = true;
         StartCoroutine(JumpCooldown());
 
-        
+
     }
 
     private bool HasSpecialAbility()
@@ -199,15 +226,17 @@ public class PlayerController : MonoBehaviour
 
     public void PlayerDies()
     {
-       
+
         //Reset player at start position if they still have lives
 
-        if (lives >= 0) {
-            lives -= 1;
+        if (lives > 0)
+        {
+            lives--;
             health = maxHealth;
             RespawnPlayer();
         }
-        else {
+        else
+        {
             //GAME OVER
             string currentSceneName = SceneManager.GetActiveScene().name;
             SceneManager.LoadScene(currentSceneName);
@@ -218,7 +247,7 @@ public class PlayerController : MonoBehaviour
     //Player gets hit and loses one health
     public void PlayerHit()
     {
-        if(health > 0) { health--; }
+        if (health > 0) { health--; }
         else
         {
             PlayerDies();
@@ -231,20 +260,33 @@ public class PlayerController : MonoBehaviour
         RespawnPlayer();
         points += 10;
 
+        //If player finished this loop without jumping, probability for random destroy is increased
+        if (!hasJumpedInThisLoop)
+        {
+            goalDestroysObjectsProbability += 5;
+        }
+        else
+        {
+            goalDestroysObjectsProbability = originalGoalDestroysObjectsProbability;
+        }
+
 
         //There is a chance that some objects get destroyed
         int rand = Random.Range(0, 101);
-        if(rand < GoalDestroysObjectsProbability)
+        if (rand < goalDestroysObjectsProbability)
         {
             RandomDeleteObjects();
         }
+
+        //set back to false
+        hasJumpedInThisLoop = false;
     }
 
 
     //Choose some random spawnedObjects and Destroy them
     public void RandomDeleteObjects()
     {
-        for(int i =0; i < deleteObjectNumber; i++)
+        for (int i = 0; i < Mathf.Min(deleteObjectNumber, spawnedObjects.Count); i++)
         {
             int rand = Random.Range(0, spawnedObjects.Count);
             GameObject obj = spawnedObjects[rand];
@@ -258,7 +300,7 @@ public class PlayerController : MonoBehaviour
     private void UseCurrentCard()
     {
 
-        transform.Find("DestroyRadius").GetComponent<BoxCollider2D>().enabled = false;
+        destroyRadius.enabled = false;
         //destroyJumpActive = false;
 
         if (hasEmptyJump)
@@ -266,13 +308,13 @@ public class PlayerController : MonoBehaviour
 
             hasEmptyJump = false;
         }
-        else if(hasDestroyJump)
+        else if (hasDestroyJump)
         {
             //destroyJumpActive = true;
 
-            transform.Find("DestroyRadius").GetComponent<BoxCollider2D>().enabled = true;
+            destroyRadius.enabled = true;
 
-            hasDestroyJump= false;
+            hasDestroyJump = false;
         }
         else
         {
@@ -284,12 +326,12 @@ public class PlayerController : MonoBehaviour
 
     private void ChooseNextCard()
     {
-        
+
         //Choose randomly if next card is spawn prefab or ability
         int rand = Random.Range(0, 101);
 
-        
-        if(rand < destroyJumpProbability)
+
+        if (rand < destroyJumpProbability)
         {
             hasDestroyJump = true;
 
@@ -316,14 +358,14 @@ public class PlayerController : MonoBehaviour
 
         spawnedObjects.Add(instance);
 
-       
+
     }
 
     private void ChooseNextPrefab()
     {
         nextPrefab = prefabs[Random.Range(0, prefabs.Length)];
 
-        
+
     }
 
     private void RespawnPlayer()
@@ -334,7 +376,7 @@ public class PlayerController : MonoBehaviour
     private bool IsGrounded()
     {
 
-        if (Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer.value))
+        if (Physics2D.Raycast(transform.position, Vector2.down, 0.8f, groundLayer.value))
         {
             return true;
         }
@@ -347,7 +389,7 @@ public class PlayerController : MonoBehaviour
     //Very high jump that is performed on jumppad
     public void SuperJump()
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, superJumpForce );
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, superJumpForce);
 
 
         //Double jump possible also after jumppad
@@ -362,7 +404,3 @@ public class PlayerController : MonoBehaviour
         isJumpCooldown = false;
     }
 }
-
-
-
-
