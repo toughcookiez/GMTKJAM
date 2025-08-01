@@ -6,6 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class PlayerController : MonoBehaviour
     public float maxHealth = 3;
 
     public float points = 0;
+
+    public GameObject BlockBreakEffect;
+    public GameObject StarEffect;
 
     public int lives = 3;
 
@@ -57,7 +61,7 @@ public class PlayerController : MonoBehaviour
     //then probability for randomDelete will be increased
     private bool hasJumpedInThisLoop = false;
 
-
+    private GameObject starObject;
 
     public float destroyJumpProbability;
     public float emptyJumpProbability;
@@ -291,7 +295,10 @@ public class PlayerController : MonoBehaviour
             int rand = Random.Range(0, spawnedObjects.Count);
             GameObject obj = spawnedObjects[rand];
             spawnedObjects.RemoveAt(rand);
+            GameObject breakEffect = Instantiate(BlockBreakEffect, obj.transform.position, Quaternion.identity);
+            breakEffect.GetComponent<ParticleSystem>().startColor = obj.GetComponent<BlockColor>()._breakColor;
             Destroy(obj);
+            
 
         }
     }
@@ -299,7 +306,7 @@ public class PlayerController : MonoBehaviour
     //Uses the current card (spawns object or use special ability)
     private void UseCurrentCard()
     {
-
+        
         destroyRadius.enabled = false;
         //destroyJumpActive = false;
 
@@ -313,6 +320,8 @@ public class PlayerController : MonoBehaviour
             //destroyJumpActive = true;
 
             destroyRadius.enabled = true;
+
+            starObject = Instantiate(StarEffect, transform.position, Quaternion.identity, transform);
 
             hasDestroyJump = false;
         }
@@ -355,11 +364,28 @@ public class PlayerController : MonoBehaviour
     {
         GameObject instance = Instantiate(nextPrefab);
         instance.transform.position = rb.position;
+        StartCoroutine(ScalePrefab(instance,.2f));
 
         spawnedObjects.Add(instance);
 
 
     }
+
+    private IEnumerator ScalePrefab(GameObject instance, float duration)
+    {
+        float currentTime = 0;
+
+        while(currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+
+            float scale = Mathf.Lerp(0, 1, currentTime / duration);
+            instance.transform.localScale = new Vector3(scale, scale, 1);
+            yield return null;
+        }
+        instance.transform.localScale = new Vector3(1, 1, 1);
+    }
+    
 
     private void ChooseNextPrefab()
     {
@@ -378,6 +404,10 @@ public class PlayerController : MonoBehaviour
 
         if (Physics2D.Raycast(transform.position, Vector2.down, 0.8f, groundLayer.value))
         {
+            if (starObject != null)
+            {
+                Destroy(starObject);
+            }
             return true;
         }
         else

@@ -278,6 +278,8 @@ MonoBehaviour:
   health: 3
   maxHealth: 3
   points: 0
+  BlockBreakEffect: {fileID: 7751796164470035290, guid: 941072f80db0aec4b904971d2d4c2988, type: 3}
+  StarEffect: {fileID: 556039236741661140, guid: 19e1599a7ec19f74ea1bba3ac8a47f60, type: 3}
   lives: 3
   deathHeight: -20
   prefabs:
