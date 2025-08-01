@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2432074931339997462}
   - component: {fileID: 7265082132855104666}
   - component: {fileID: 1298646021336599418}
+  - component: {fileID: -8417902185714229027}
   m_Layer: 0
   m_Name: EmptyJump
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 344488710053223602, guid: 44dec093787bb344e84fe443504d9f41, type: 3}
+  m_Sprite: {fileID: -2230106549069818738, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,3 +102,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardType: 0
+--- !u!114 &-8417902185714229027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6661573503412279831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814f858dd6279ab4c99df97c0cb46ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardSprite: {fileID: -2230106549069818738, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}

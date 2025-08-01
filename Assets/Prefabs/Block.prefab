@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6985877457450878436}
   - component: {fileID: 490169122056404817}
   - component: {fileID: 8739947263891807187}
+  - component: {fileID: -1119654518081785550}
   m_Layer: 3
   m_Name: Block
   m_TagString: Block
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -776619913, guid: a6f93bab85e4ddf41821be368baca9cd, type: 3}
+  m_Sprite: {fileID: -690606404812707358, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -152,17 +153,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0012861192, y: -0.009002984}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.55833334, y: 0.51666665}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.544705, y: 0.50354826}
   m_EdgeRadius: 0
 --- !u!114 &490169122056404817
 MonoBehaviour:
@@ -189,4 +190,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c64a9b10a7d6a4896c5e2b456180d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _breakColor: {r: 0.70980394, g: 0.41960788, b: 0.37254903, a: 1}
+  _breakColor: {r: 0.7411765, g: 0.69411767, b: 0.69803923, a: 1}
+--- !u!114 &-1119654518081785550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6512513433034967391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814f858dd6279ab4c99df97c0cb46ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardSprite: {fileID: -690606404812707358, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}

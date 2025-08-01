@@ -295,8 +295,11 @@ public class PlayerController : MonoBehaviour
             int rand = Random.Range(0, spawnedObjects.Count);
             GameObject obj = spawnedObjects[rand];
             spawnedObjects.RemoveAt(rand);
-            GameObject breakEffect = Instantiate(BlockBreakEffect, obj.transform.position, Quaternion.identity);
-            breakEffect.GetComponent<ParticleSystem>().startColor = obj.GetComponent<BlockColor>()._breakColor;
+            if (BlockBreakEffect != null)
+            {
+                GameObject breakEffect = Instantiate(BlockBreakEffect, obj.transform.position, Quaternion.identity);
+                breakEffect.GetComponent<ParticleSystem>().startColor = obj.GetComponent<BlockColor>()._breakColor;
+            }
             Destroy(obj);
             
 

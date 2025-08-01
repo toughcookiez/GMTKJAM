@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 710281606629108388}
   - component: {fileID: 598774065699706691}
   - component: {fileID: -2562583693790624483}
+  - component: {fileID: 8617085778690631083}
   m_Layer: 0
   m_Name: Spike
   m_TagString: SpawnObject
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -5159362228428509745, guid: d53e8145c64984c4bbad3d3b57e24b82, type: 3}
+  m_Sprite: {fileID: -3515673465219079325, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +130,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.35, y: 1.35}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -189,4 +190,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c64a9b10a7d6a4896c5e2b456180d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _breakColor: {r: 0.48235297, g: 0.46274513, b: 0.46274513, a: 1}
+  _breakColor: {r: 0.9568628, g: 0.2784314, b: 0.29803923, a: 1}
+--- !u!114 &8617085778690631083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241018785540598438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814f858dd6279ab4c99df97c0cb46ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardSprite: {fileID: -7027299466050061320, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}

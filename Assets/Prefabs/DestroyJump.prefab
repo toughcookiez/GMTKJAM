@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 662769589429842307}
   - component: {fileID: 946852076698883960}
   - component: {fileID: 7701068539477781625}
+  - component: {fileID: 8608124896255131712}
   m_Layer: 0
   m_Name: DestroyJump
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 5199979006384268662, guid: a9afd7dab0306704788c97c645e4f15b, type: 3}
+  m_Sprite: {fileID: 5249313704910152046, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,3 +102,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardType: 1
+--- !u!114 &8608124896255131712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598861747893268526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814f858dd6279ab4c99df97c0cb46ae2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardSprite: {fileID: 5249313704910152046, guid: 56fed16e2c8d4a5449d77cac78b1a383, type: 3}
