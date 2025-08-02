@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using TMPro;
+
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 100;
     public float jumpForce = 300;
     public float superJumpForce = 500;
+
 
     public float health = 3;
     public float maxHealth = 3;
@@ -142,9 +144,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
+    
         if (!isAutoRunner)
         {
 
@@ -443,9 +443,11 @@ public class PlayerController : MonoBehaviour
         {
             hasEmptyJump = true;
         }
-       
+
+        
         prefabFirstImage.UpdateImage();
         prefabSecondImage.UpdateImage();
+
     }
 
 
