@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
@@ -46,6 +47,17 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true;
     private bool isDashing = false;
 
+    private bool _isDead = false;
+
+    [SerializeField] private GameObject LoseScreen;
+
+    [SerializeField] private TextMeshProUGUI ScoreText;
+
+    [SerializeField] private TextMeshProUGUI HighScoreText;
+
+    [SerializeField] private HighScore _levelHighScore;
+
+
     //Destroy jump... while jumping the player destroys the objects they touch
     private bool hasDestroyJump = false;
     //private bool destroyJumpActive = false;
@@ -88,6 +100,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        LoseScreen.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
 
         startPos = rb.position;
@@ -119,12 +132,12 @@ public class PlayerController : MonoBehaviour
         {
 
             //Move Left/Right
-            if (Input.GetKey(KeyCode.A))
+            if (Input.GetKey(KeyCode.A) && !_isDead)
             {
                 rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
 
             }
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKey(KeyCode.D) && !_isDead)
             {
                 rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
 
@@ -135,6 +148,11 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            if (_isDead)
+            {
+                return;
+            }
+
             //If is autorunner move right automatically
             rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
 
@@ -199,6 +217,10 @@ public class PlayerController : MonoBehaviour
     //Get hit by obstacle
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (_isDead)
+        {
+            return;
+        }
         //Only get hit if not using DestroyJump
         if (other.gameObject.CompareTag("Harmful") && !destroyRadius.enabled)
         {
@@ -212,6 +234,11 @@ public class PlayerController : MonoBehaviour
 
     private void Jump()
     {
+        if (_isDead)
+        {
+            return;
+        }
+
         UseCurrentCard();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
 
@@ -232,18 +259,26 @@ public class PlayerController : MonoBehaviour
     {
 
         //Reset player at start position if they still have lives
-
+        lives--;
         if (lives > 0)
-        {
-            lives--;
+        {  
             health = maxHealth;
             RespawnPlayer();
         }
         else
         {
             //GAME OVER
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            _isDead = true;
+            if (_levelHighScore.score < points)
+            {
+                _levelHighScore.score = points;
+            }
+            LoseScreen.SetActive(true);
+            string PointsString = points.ToSafeString();
+            ScoreText.text = "Score: " + PointsString;
+
+            string HighScoreString = _levelHighScore.score.ToSafeString();
+            HighScoreText.text = "HighScore: " + HighScoreString;
         }
 
     }
