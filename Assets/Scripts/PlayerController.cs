@@ -106,6 +106,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject ItemHolder;
 
+    public UIManager uIManager;
+
+    private AudioSource GoalAudioSource;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -240,6 +244,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Goal"))
         {
+            GoalAudioSource.Play();
             GoalReached();
         }
     }
@@ -287,6 +292,8 @@ public class PlayerController : MonoBehaviour
                 _levelHighScore.score = points;
             }
             LoseScreen.SetActive(true);
+            uIManager.GetComponent<AudioSource>().volume = 0;
+            LoseScreen.GetComponent<AudioSource>().Play();  
             string PointsString = points.ToSafeString();
             ScoreText.text = "Score: " + PointsString;
 

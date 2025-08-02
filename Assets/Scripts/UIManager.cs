@@ -6,6 +6,8 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private Animator _transitionAnimator;
 
+    private AudioSource _audioSource;
+
     private void Awake()
     {
         if (_transitionAnimator != null)
@@ -32,6 +34,10 @@ public class UIManager : MonoBehaviour
         if (_transitionAnimator != null)
         {
             //trigger Transition
+            if (_audioSource != null)
+            {
+                _audioSource.volume -= .1f;
+            }    
             _transitionAnimator.SetTrigger("End");
         }  
         yield return new WaitForSeconds(.8f);
