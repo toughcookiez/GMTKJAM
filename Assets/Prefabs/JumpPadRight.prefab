@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 779435611066585684}
   - component: {fileID: 5541985165497709134}
   - component: {fileID: 3553029884760160981}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpPadRight
   m_TagString: SpawnObject
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   - component: {fileID: 4726071307371517285}
   - component: {fileID: 2801431306003044614}
   - component: {fileID: 5952119515886463650}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: JumpSurface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
