@@ -204,10 +204,10 @@ public class PlayerController : MonoBehaviour
         //}
 
         //if player falls into pit they die
-        if (rb.position.y < deathHeight)
+      /*  if (rb.position.y < deathHeight)
         {
             PlayerDies();
-        }
+        }*/
 
     }
 
