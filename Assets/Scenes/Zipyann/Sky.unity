@@ -3998,7 +3998,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: fef8b5df9382c5b499a3683795530778, type: 2}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: prefabs.Array.size
-      value: 9
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: emptyJumpProbability
@@ -4043,7 +4043,7 @@ PrefabInstance:
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[9]'
       value: 
-      objectReference: {fileID: 6792206462332197620, guid: 6666b28f9da7bbc43966d8f2912e594e, type: 3}
+      objectReference: {fileID: 2082053574272555673, guid: 8a77beb78cd46134ab9be828ae48e619, type: 3}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: destroyJumpProbability
       value: 5
@@ -4051,7 +4051,19 @@ PrefabInstance:
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[10]'
       value: 
-      objectReference: {fileID: 4576694376211141153, guid: c9d6fd2df0ecb4d4aab8602773351fbe, type: 3}
+      objectReference: {fileID: 6792206462332197620, guid: 6666b28f9da7bbc43966d8f2912e594e, type: 3}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: 'prefabs.Array.data[11]'
+      value: 
+      objectReference: {fileID: 823524263115034194, guid: e05c15f61c1ed0341a7dc9e7424ff149, type: 3}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: 'prefabs.Array.data[12]'
+      value: 
+      objectReference: {fileID: 5297969263445767183, guid: f4819c6889d1e1e429e04df991b7d379, type: 3}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: 'prefabs.Array.data[13]'
+      value: 
+      objectReference: {fileID: 7476170549213826882, guid: 1b5d49681e7ffc0489ba83abefaa4b11, type: 3}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: GoalDestroysObjectsProbability
       value: 60

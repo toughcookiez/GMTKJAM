@@ -307,4 +307,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isActive: 0
   timeUntilActive: 0.5
-  dir: {x: 1, y: 0}
+  dir: {x: 1, y: 0.8}
