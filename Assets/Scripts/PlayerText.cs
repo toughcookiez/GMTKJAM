@@ -19,6 +19,6 @@ public class PlayerText : MonoBehaviour
     void Update()
     {
         
-        GetComponent<TextMeshProUGUI>().text = "Health: " + player.health + " Lives: " + player.lives + " Points: " + player.points;
+        GetComponent<TextMeshProUGUI>().text =   " Lives: " + player.lives + " Points: " + player.points;
     }
 }

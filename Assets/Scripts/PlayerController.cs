@@ -251,8 +251,8 @@ public class PlayerController : MonoBehaviour
     //Player gets hit and loses one health
     public void PlayerHit()
     {
-        if (health > 0) { health--; }
-        else
+        health--;
+        if (health <= 0)
         {
             PlayerDies();
         }
