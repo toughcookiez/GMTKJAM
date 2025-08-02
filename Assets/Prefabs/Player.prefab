@@ -289,6 +289,10 @@ MonoBehaviour:
   nextPrefab: {fileID: 6512513433034967391, guid: 5e42511f6c6ee3e4fb8aa1d420424983, type: 3}
   destroyJumpPrefab: {fileID: 1598861747893268526, guid: 0b05292160b788f4ab97706f531e6f98, type: 3}
   emptyJumpPrefab: {fileID: 6661573503412279831, guid: 76c4f6ed37bf8954fbdaed6f76de8f89, type: 3}
+  LoseScreen: {fileID: 0}
+  ScoreText: {fileID: 0}
+  HighScoreText: {fileID: 0}
+  _levelHighScore: {fileID: 0}
   destroyJumpProbability: 3
   emptyJumpProbability: 7
   goalDestroysObjectsProbability: 7
