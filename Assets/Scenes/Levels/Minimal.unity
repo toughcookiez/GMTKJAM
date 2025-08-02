@@ -4577,7 +4577,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 2d5a0a94eb03d014eafc95e1f69522e6, type: 2}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: prefabs.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: emptyJumpProbability
@@ -4606,7 +4606,11 @@ PrefabInstance:
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[5]'
       value: 
-      objectReference: {fileID: 8241018785540598438, guid: a6078e5616d69ca44a36c2b2c4225d02, type: 3}
+      objectReference: {fileID: 3794475554348727379, guid: 1e492f3fa1e6a764a8d1ef2700f77e41, type: 3}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: 'prefabs.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1805300326460873192, guid: 16cf05c0d3f590b40a07102ef0f11b90, type: 3}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: GoalDestroysObjectsProbability
       value: 60
