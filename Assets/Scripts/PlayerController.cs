@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public GameObject[] prefabs = new GameObject[3];
 
     public GameObject nextPrefab;
+    public GameObject nextNextPrefab;
 
     public GameObject destroyJumpPrefab;
     public GameObject emptyJumpPrefab;
@@ -93,7 +94,8 @@ public class PlayerController : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private PrefabImage prefabImage;
+    private PrefabImage prefabFirstImage;
+    private PrefabImage prefabSecondImage;
 
     //Radius in which objects are destroyed during DestroyJump
     private BoxCollider2D destroyRadius;
@@ -114,7 +116,8 @@ public class PlayerController : MonoBehaviour
 
         startPos = rb.position;
 
-        prefabImage = GameObject.Find("PrefabImage").GetComponent<PrefabImage>();
+        prefabFirstImage = GameObject.Find("FirstCardImage").GetComponent<PrefabImage>();
+        prefabSecondImage = GameObject.Find("SecondCardImage").GetComponent<PrefabImage>();
 
 
         destroyRadius = transform.Find("DestroyRadius").GetComponent<BoxCollider2D>();
@@ -270,12 +273,13 @@ public class PlayerController : MonoBehaviour
         //Reset player at start position if they still have lives
         lives--;
         if (lives > 0)
-        {  
+        {
             health = maxHealth;
             RespawnPlayer();
         }
         else
         {
+            lives = 0;
             //GAME OVER
             _isDead = true;
             if (_levelHighScore.score < points)
@@ -402,6 +406,7 @@ public class PlayerController : MonoBehaviour
 
     private void ChooseNextCard()
     {
+        ChooseNextPrefab();
 
         //Choose randomly if next card is spawn prefab or ability
         int rand = Random.Range(0, 101);
@@ -410,7 +415,6 @@ public class PlayerController : MonoBehaviour
         if (rand < destroyJumpProbability)
         {
             hasDestroyJump = true;
-
             nextPrefab = destroyJumpPrefab;
         }
         else if (rand < emptyJumpProbability)
@@ -418,11 +422,9 @@ public class PlayerController : MonoBehaviour
             hasEmptyJump = true;
             nextPrefab = emptyJumpPrefab;
         }
-        else
-        {
-            ChooseNextPrefab();
-        }
-        prefabImage.UpdateImage();
+       
+        prefabFirstImage.UpdateImage();
+        prefabSecondImage.UpdateImage();
     }
 
 
@@ -456,9 +458,8 @@ public class PlayerController : MonoBehaviour
 
     private void ChooseNextPrefab()
     {
-        nextPrefab = prefabs[Random.Range(0, prefabs.Length)];
-
-
+        nextPrefab = nextNextPrefab != null? nextNextPrefab : prefabs[Random.Range(0, prefabs.Length)];
+        nextNextPrefab = prefabs[Random.Range(0, prefabs.Length)];
     }
 
     private void RespawnPlayer()
