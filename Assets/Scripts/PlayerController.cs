@@ -97,6 +97,8 @@ public class PlayerController : MonoBehaviour
 
     public int pointsPerDestroyedObject = 2;
 
+    private ItemsManager itemsManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -298,6 +300,23 @@ public class PlayerController : MonoBehaviour
     {
         RespawnPlayer();
         points += 10;
+
+        float ranValue = Random.Range(0, 4);
+        if (ranValue == 3)
+        {
+            foreach (var obj in itemsManager.Holders)
+            {
+                if (obj.transform.childCount == 0)
+                {
+                    Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                }
+                else 
+                {
+                    Destroy(obj.transform.GetChild(0).gameObject);
+                    Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                }
+            }
+        }
 
         //If player finished this loop without jumping, probability for random destroy is increased
         if (!hasJumpedInThisLoop)
