@@ -4852,6 +4852,22 @@ PrefabInstance:
       propertyPath: _levelHighScore
       value: 
       objectReference: {fileID: 11400000, guid: 0ddb1cd227b9ad940b8e6e7b29031ae8, type: 2}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: emptyJumpProbability
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: 'prefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 6512513433034967391, guid: 5e42511f6c6ee3e4fb8aa1d420424983, type: 3}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: destroyJumpProbability
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: goalDestroysObjectsProbability
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6498735617839245266, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: m_Name
       value: Player
