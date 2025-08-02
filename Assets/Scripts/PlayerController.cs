@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
 
     //List of all Objects that were Spawned by the player
-    private List<GameObject> spawnedObjects = new List<GameObject>();
+    public List<GameObject> spawnedObjects = new List<GameObject>();
 
     public bool isAutoRunner = false;
     public float moveSpeed = 100;
@@ -46,6 +46,9 @@ public class PlayerController : MonoBehaviour
     private bool canDoubleJump = false;
     private bool canDash = true;
     private bool isDashing = false;
+
+    //During respawning the player destroys objects at the respawn point
+    private bool isRespawnDestroy = false;
 
     private bool _isDead = false;
 
@@ -342,6 +345,8 @@ public class PlayerController : MonoBehaviour
 
         //set back to false
         hasJumpedInThisLoop = false;
+
+        
     }
 
 
@@ -358,6 +363,7 @@ public class PlayerController : MonoBehaviour
                 GameObject breakEffect = Instantiate(BlockBreakEffect, obj.transform.position, Quaternion.identity);
                 breakEffect.GetComponent<ParticleSystem>().startColor = obj.GetComponent<BlockColor>()._breakColor;
             }
+            spawnedObjects.Remove(obj);
             Destroy(obj);
             
 
@@ -458,6 +464,12 @@ public class PlayerController : MonoBehaviour
     private void RespawnPlayer()
     {
         rb.position = startPos;
+
+        //After reaching goal for a short time player destroys objects at respawn point
+        isRespawnDestroy = true;
+        destroyRadius.enabled = true;
+
+        StartCoroutine(StopRespawnDestroy());
     }
 
     private bool IsGrounded()
@@ -493,5 +505,13 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(jumpCooldownTime);
 
         isJumpCooldown = false;
+    }
+
+    IEnumerator StopRespawnDestroy()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        isRespawnDestroy = false;
+        destroyRadius.enabled = false;
     }
 }

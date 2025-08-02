@@ -271,6 +271,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  spawnedObjects: []
   isAutoRunner: 0
   moveSpeed: 10
   jumpForce: 15
