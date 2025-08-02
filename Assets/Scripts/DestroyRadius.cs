@@ -21,7 +21,9 @@ public class DestroyRadius : MonoBehaviour
     {
         if (other.gameObject.CompareTag("SpawnObject") || other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Harmful"))
         {
+            player.spawnedObjects.Remove(other.gameObject);
             Destroy(other.gameObject);
+            
             GameObject breakEffect = Instantiate(player.BlockBreakEffect, other.gameObject.transform.position, Quaternion.identity);
             breakEffect.GetComponent<ParticleSystem>().startColor = other.gameObject.GetComponent<BlockColor>()._breakColor;
 
