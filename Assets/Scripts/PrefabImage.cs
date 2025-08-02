@@ -21,7 +21,14 @@ public class PrefabImage : MonoBehaviour
     // Update is called once per frame
     public void UpdateImage()
     {
-
+        if (player == null)
+        {
+            return;
+        }
+        if (player.nextPrefab == null)
+        {
+            return;
+        }
         image.sprite = player.nextPrefab.GetComponent<SpriteRenderer>().sprite;
     }
 }
