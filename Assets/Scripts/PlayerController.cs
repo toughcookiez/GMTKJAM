@@ -108,8 +108,6 @@ public class PlayerController : MonoBehaviour
 
     public UIManager uIManager;
 
-    private AudioSource GoalAudioSource;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -244,7 +242,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Goal"))
         {
-            GoalAudioSource.Play();
+            other.GetComponent<AudioSource>().Play();
             GoalReached();
         }
     }
