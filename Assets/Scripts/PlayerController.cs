@@ -419,19 +419,26 @@ public class PlayerController : MonoBehaviour
 
         if (rand < destroyJumpProbability)
         {
-            hasDestroyJump = true;
             nextPrefab = nextNextPrefab ?? destroyJumpPrefab;
             nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : destroyJumpPrefab;
         }
         else if (rand < emptyJumpProbability)
         {
-            hasEmptyJump = true;
             nextPrefab = nextNextPrefab ?? emptyJumpPrefab;
             nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : emptyJumpPrefab;
         } 
         else
         {
             ChooseNextPrefab();
+        }
+
+        if (nextPrefab == destroyJumpPrefab)
+        {
+            hasDestroyJump = true;
+        } 
+        else if (nextPrefab == emptyJumpPrefab)
+        {
+            hasEmptyJump = true;
         }
        
         prefabFirstImage.UpdateImage();
@@ -442,6 +449,16 @@ public class PlayerController : MonoBehaviour
     //Spawn prefab at player position
     private void SpawnPrefab()
     {
+        if (nextPrefab == destroyJumpPrefab)
+        {
+            return;
+        }
+
+        if (nextPrefab == emptyJumpPrefab)
+        {
+            hasEmptyJump = false;
+            return;
+        }
         GameObject instance = Instantiate(nextPrefab);
         instance.transform.position = rb.position;
         StartCoroutine(ScalePrefab(instance,.2f));

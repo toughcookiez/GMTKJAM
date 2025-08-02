@@ -4580,10 +4580,6 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: emptyJumpProbability
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[0]'
       value: 
       objectReference: {fileID: 8241018785540598438, guid: a6078e5616d69ca44a36c2b2c4225d02, type: 3}

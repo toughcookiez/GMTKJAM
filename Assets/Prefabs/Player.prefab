@@ -288,6 +288,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   nextPrefab: {fileID: 6512513433034967391, guid: 5e42511f6c6ee3e4fb8aa1d420424983, type: 3}
+  nextNextPrefab: {fileID: 0}
   destroyJumpPrefab: {fileID: 1598861747893268526, guid: 0b05292160b788f4ab97706f531e6f98, type: 3}
   emptyJumpPrefab: {fileID: 6661573503412279831, guid: 76c4f6ed37bf8954fbdaed6f76de8f89, type: 3}
   LoseScreen: {fileID: 0}
@@ -301,6 +302,8 @@ MonoBehaviour:
   deleteObjectNumber: 4
   rb: {fileID: 0}
   pointsPerDestroyedObject: 2
+  ItemHolder: {fileID: 0}
+  uIManager: {fileID: 0}
 --- !u!70 &7170773665176156769
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

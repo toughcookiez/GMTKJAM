@@ -189,4 +189,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c64a9b10a7d6a4896c5e2b456180d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _breakColor: {r: 0, g: 0, b: 0, a: 0}
+  _breakColor: {r: 0.882353, g: 0.79215693, b: 0.20000002, a: 0}
