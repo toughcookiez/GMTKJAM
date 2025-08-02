@@ -8,6 +8,10 @@ public class JumpSurface : MonoBehaviour
 
     public bool isActive = false;
     public float timeUntilActive = 2;
+
+
+    //Direction into which the jumppad throws
+    public Vector2 dir;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,6 +33,9 @@ public class JumpSurface : MonoBehaviour
         if (isActive && other.gameObject.CompareTag("Player"))
         {
             other.GetComponent<PlayerController>().SuperJump();
+        }else if (isActive && other.gameObject.GetComponent<Jumpable>()!=null) 
+        {
+            other.GetComponent<Jumpable>().Jump();
         }
     }
 

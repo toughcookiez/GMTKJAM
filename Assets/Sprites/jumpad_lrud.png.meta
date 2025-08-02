@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: 62a0a95732fb5fb43983a2b6fa282ae4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8524244108935108865
+    second: jumpad_lrud_0
+  - first:
+      213: -6107834660299890212
+    second: jumpad_lrud_1
+  - first:
+      213: -6074772826810737879
+    second: jumpad_lrud_2
+  - first:
+      213: 8655838019223178293
+    second: jumpad_lrud_3
+  - first:
+      213: 5712626699005662267
+    second: jumpad_lrud_4
+  - first:
+      213: -879743417081698736
+    second: jumpad_lrud_5
+  - first:
+      213: 2099861713357611535
+    second: jumpad_lrud_6
+  - first:
+      213: 6549424502205038615
+    second: jumpad_lrud_7
+  - first:
+      213: 2741486249985177495
+    second: jumpad_lrud_8
+  - first:
+      213: -1587602599942943553
+    second: jumpad_lrud_9
+  - first:
+      213: -4974681638173668513
+    second: jumpad_lrud_10
+  - first:
+      213: -197559511196955652
+    second: jumpad_lrud_11
+  - first:
+      213: -6983242004239821558
+    second: jumpad_lrud_12
+  - first:
+      213: 4197014024092335153
+    second: jumpad_lrud_13
+  - first:
+      213: 6062274945052092819
+    second: jumpad_lrud_14
+  - first:
+      213: -4003388582875031092
+    second: jumpad_lrud_15
+  - first:
+      213: 76414302791255118
+    second: jumpad_lrud_16
+  - first:
+      213: 4664305848765483820
+    second: jumpad_lrud_17
+  - first:
+      213: -8859328470536457844
+    second: jumpad_lrud_18
+  - first:
+      213: -4029311636965310910
+    second: jumpad_lrud_19
+  - first:
+      213: 813679207215158405
+    second: jumpad_lrud_20
+  - first:
+      213: -8347015913551256042
+    second: jumpad_lrud_21
+  - first:
+      213: 4634662225941574664
+    second: jumpad_lrud_22
+  - first:
+      213: -7633349024995894796
+    second: jumpad_lrud_23
+  - first:
+      213: -4000164470514958465
+    second: jumpad_lrud_24
+  - first:
+      213: 734427434865933590
+    second: jumpad_lrud_25
+  - first:
+      213: -3566685953592506374
+    second: jumpad_lrud_26
+  - first:
+      213: -5907277665855324068
+    second: jumpad_lrud_27
+  - first:
+      213: -8040213821930348715
+    second: jumpad_lrud_28
+  - first:
+      213: 1892147289308999867
+    second: jumpad_lrud_29
+  - first:
+      213: 1377968845100979465
+    second: jumpad_lrud_30
+  - first:
+      213: 7075658893223245706
+    second: jumpad_lrud_31
+  - first:
+      213: -4557488891980425467
+    second: jumpad_lrud_32
+  - first:
+      213: -1984833915993595492
+    second: jumpad_lrud_33
+  - first:
+      213: -6034815618286561317
+    second: jumpad_lrud_34
+  - first:
+      213: 8873525350549327450
+    second: jumpad_lrud_35
+  - first:
+      213: -3029105665778787976
+    second: jumpad_lrud_36
+  - first:
+      213: 8038206182469490998
+    second: jumpad_lrud_37
+  - first:
+      213: 4195866233315491895
+    second: jumpad_lrud_38
+  - first:
+      213: -133228958116219111
+    second: jumpad_lrud_39
+  - first:
+      213: 3974974013816135661
+    second: jumpad_lrud_40
+  - first:
+      213: 7019952014462023995
+    second: jumpad_lrud_41
+  - first:
+      213: 1892570167805374693
+    second: jumpad_lrud_42
+  - first:
+      213: -165652642419547693
+    second: jumpad_lrud_43
+  - first:
+      213: -1706527997524265081
+    second: jumpad_lrud_44
+  - first:
+      213: -8820199696300367933
+    second: jumpad_lrud_45
+  - first:
+      213: -8302098477546363760
+    second: jumpad_lrud_46
+  - first:
+      213: -2017550025578915429
+    second: jumpad_lrud_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jumpad_lrud_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 337
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6e434752dc3b980800000000000000
+      internalID: -8524244108935108865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 337
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd1a106bcbc9c3ba0800000000000000
+      internalID: -6107834660299890212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 335
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b10ceac4212bba0800000000000000
+      internalID: -6074772826810737879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 336
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c4e1161d6bf1870800000000000000
+      internalID: 8655838019223178293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_4
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 336
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3415a847b3574f40800000000000000
+      internalID: 5712626699005662267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 348
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0566b53f5068ac3f0800000000000000
+      internalID: -879743417081698736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 354
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02af1e4a15342d10800000000000000
+      internalID: 2099861713357611535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 320
+        width: 32
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710cb2962ea34ea50800000000000000
+      internalID: 6549424502205038615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_8
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 363
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797fbf62837bb0620800000000000000
+      internalID: 2741486249985177495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_9
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 337
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc0ae9c8d3b7f9e0800000000000000
+      internalID: -1587602599942943553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_10
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 308
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b0006386166fab0800000000000000
+      internalID: -4974681638173668513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 283
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb0b19dba0224df0800000000000000
+      internalID: -197559511196955652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_12
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 293
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05d2bc556a861f90800000000000000
+      internalID: -6983242004239821558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 277
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c3b57a40ace3a30800000000000000
+      internalID: 4197014024092335153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 277
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399a49671f6812450800000000000000
+      internalID: 6062274945052092819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_15
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 270
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc911e37b4b1178c0800000000000000
+      internalID: -4003388582875031092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_16
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 284
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44c1ad476a7f0100800000000000000
+      internalID: 76414302791255118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_17
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 281
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b8177f471fab040800000000000000
+      internalID: 4664305848765483820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 232
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c817b2dd1b75d0580800000000000000
+      internalID: -8859328470536457844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 241
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24eb5551a620518c0800000000000000
+      internalID: -4029311636965310910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_20
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 232
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5845e2b8de4ca4b00800000000000000
+      internalID: 813679207215158405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_21
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 232
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616ae324041792c80800000000000000
+      internalID: -8347015913551256042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_22
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 232
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8043b2f2db0a15040800000000000000
+      internalID: 4634662225941574664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 237
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f99b864185e01690800000000000000
+      internalID: -7633349024995894796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 232
+        width: 71
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7f31db9b9f8c78c0800000000000000
+      internalID: -4000164470514958465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_25
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 240
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61d3c706cd5313a00800000000000000
+      internalID: 734427434865933590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_26
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 224
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af74eb6b506908ec0800000000000000
+      internalID: -3566685953592506374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_27
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 224
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c504811d242250ea0800000000000000
+      internalID: -5907277665855324068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_28
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 230
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fd7a9b02c6b6090800000000000000
+      internalID: -8040213821930348715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_29
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 240
+        width: 27
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb03bf14fe1424a10800000000000000
+      internalID: 1892147289308999867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_30
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 241
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9059cc32d578f1310800000000000000
+      internalID: 1377968845100979465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_31
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 197
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87b762664ac13260800000000000000
+      internalID: 7075658893223245706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_32
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 177
+        width: 72
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507d7b5dffb80c0c0800000000000000
+      internalID: -4557488891980425467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_33
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 197
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91ed0bc1147474e0800000000000000
+      internalID: -1984833915993595492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_34
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 174
+        width: 71
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7dc034b27004ca0800000000000000
+      internalID: -6034815618286561317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_35
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 171
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e8ae8da48152b70800000000000000
+      internalID: 8873525350549327450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_36
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 171
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879d124227476f5d0800000000000000
+      internalID: -3029105665778787976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_37
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 191
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63951794fe17d8f60800000000000000
+      internalID: 8038206182469490998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_38
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 203
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73083d9cb16ba3a30800000000000000
+      internalID: 4195866233315491895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_39
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 180
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 917ffade7fca62ef0800000000000000
+      internalID: -133228958116219111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 177
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: def5be42ec1f92730800000000000000
+      internalID: 3974974013816135661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_41
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 174
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b39fb42f921eb6160800000000000000
+      internalID: 7019952014462023995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_42
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 181
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e07a845a82c34a10800000000000000
+      internalID: 1892570167805374693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_43
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 154
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d16a74accb73bdf0800000000000000
+      internalID: -165652642419547693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_44
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 169
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 787be4ce3d13158e0800000000000000
+      internalID: -1706527997524265081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_45
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 163
+        width: 9
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf120e8b1b589580800000000000000
+      internalID: -8820199696300367933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_46
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 121
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094a98bcb6509cc80800000000000000
+      internalID: -8302098477546363760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpad_lrud_47
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 121
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99d9c0f0f83004e0800000000000000
+      internalID: -2017550025578915429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jumpad_lrud_0: -8524244108935108865
+      jumpad_lrud_1: -6107834660299890212
+      jumpad_lrud_10: -4974681638173668513
+      jumpad_lrud_11: -197559511196955652
+      jumpad_lrud_12: -6983242004239821558
+      jumpad_lrud_13: 4197014024092335153
+      jumpad_lrud_14: 6062274945052092819
+      jumpad_lrud_15: -4003388582875031092
+      jumpad_lrud_16: 76414302791255118
+      jumpad_lrud_17: 4664305848765483820
+      jumpad_lrud_18: -8859328470536457844
+      jumpad_lrud_19: -4029311636965310910
+      jumpad_lrud_2: -6074772826810737879
+      jumpad_lrud_20: 813679207215158405
+      jumpad_lrud_21: -8347015913551256042
+      jumpad_lrud_22: 4634662225941574664
+      jumpad_lrud_23: -7633349024995894796
+      jumpad_lrud_24: -4000164470514958465
+      jumpad_lrud_25: 734427434865933590
+      jumpad_lrud_26: -3566685953592506374
+      jumpad_lrud_27: -5907277665855324068
+      jumpad_lrud_28: -8040213821930348715
+      jumpad_lrud_29: 1892147289308999867
+      jumpad_lrud_3: 8655838019223178293
+      jumpad_lrud_30: 1377968845100979465
+      jumpad_lrud_31: 7075658893223245706
+      jumpad_lrud_32: -4557488891980425467
+      jumpad_lrud_33: -1984833915993595492
+      jumpad_lrud_34: -6034815618286561317
+      jumpad_lrud_35: 8873525350549327450
+      jumpad_lrud_36: -3029105665778787976
+      jumpad_lrud_37: 8038206182469490998
+      jumpad_lrud_38: 4195866233315491895
+      jumpad_lrud_39: -133228958116219111
+      jumpad_lrud_4: 5712626699005662267
+      jumpad_lrud_40: 3974974013816135661
+      jumpad_lrud_41: 7019952014462023995
+      jumpad_lrud_42: 1892570167805374693
+      jumpad_lrud_43: -165652642419547693
+      jumpad_lrud_44: -1706527997524265081
+      jumpad_lrud_45: -8820199696300367933
+      jumpad_lrud_46: -8302098477546363760
+      jumpad_lrud_47: -2017550025578915429
+      jumpad_lrud_5: -879743417081698736
+      jumpad_lrud_6: 2099861713357611535
+      jumpad_lrud_7: 6549424502205038615
+      jumpad_lrud_8: 2741486249985177495
+      jumpad_lrud_9: -1587602599942943553
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
