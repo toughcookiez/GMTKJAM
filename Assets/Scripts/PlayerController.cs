@@ -99,11 +99,15 @@ public class PlayerController : MonoBehaviour
 
     private ItemsManager itemsManager;
 
+    public GameObject ItemHolder;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         LoseScreen.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
+
+        itemsManager = ItemHolder.GetComponent<ItemsManager>();
 
         startPos = rb.position;
 
@@ -301,7 +305,7 @@ public class PlayerController : MonoBehaviour
         RespawnPlayer();
         points += 10;
 
-        float ranValue = Random.Range(0, 4);
+        float ranValue = Random.Range(1, 4);
         if (ranValue == 3)
         {
             foreach (var obj in itemsManager.Holders)
