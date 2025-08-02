@@ -44,6 +44,7 @@ public class PrefabImage : MonoBehaviour
         {
             return;
         }
+        transform.rotation = player.nextPrefab.transform.rotation;
         image.sprite = player.nextPrefab.GetComponent<SpriteRenderer>().sprite;
     }
 
@@ -58,6 +59,7 @@ public class PrefabImage : MonoBehaviour
         {
             return;
         }
+        transform.rotation = player.nextNextPrefab.transform.rotation;
         image.sprite = player.nextNextPrefab.GetComponent<SpriteRenderer>().sprite;
     }
 }
