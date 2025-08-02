@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerText : MonoBehaviour
 {
 
+    [SerializeField] private TextType type;
     PlayerController player;
 
 
@@ -18,7 +19,22 @@ public class PlayerText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        switch (type)
+        {
+            case TextType.Lives:
+                GetComponent<TextMeshProUGUI>().text = " Lives: " + player.lives;
+                break;
+            case TextType.Points:
+                GetComponent<TextMeshProUGUI>().text = " Points: " + player.points;
+                break;
+        }
+
         
-        GetComponent<TextMeshProUGUI>().text =   " Lives: " + player.lives + " Points: " + player.points;
     }
+}
+
+public enum TextType
+{
+    Lives,
+    Points
 }

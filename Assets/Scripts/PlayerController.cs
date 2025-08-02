@@ -406,7 +406,7 @@ public class PlayerController : MonoBehaviour
 
     private void ChooseNextCard()
     {
-        ChooseNextPrefab();
+        
 
         //Choose randomly if next card is spawn prefab or ability
         int rand = Random.Range(0, 101);
@@ -415,12 +415,18 @@ public class PlayerController : MonoBehaviour
         if (rand < destroyJumpProbability)
         {
             hasDestroyJump = true;
-            nextPrefab = destroyJumpPrefab;
+            nextPrefab = nextNextPrefab ?? destroyJumpPrefab;
+            nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : destroyJumpPrefab;
         }
         else if (rand < emptyJumpProbability)
         {
             hasEmptyJump = true;
-            nextPrefab = emptyJumpPrefab;
+            nextPrefab = nextNextPrefab ?? emptyJumpPrefab;
+            nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : emptyJumpPrefab;
+        } 
+        else
+        {
+            ChooseNextPrefab();
         }
        
         prefabFirstImage.UpdateImage();
