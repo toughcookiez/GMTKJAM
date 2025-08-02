@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 7170773665176156769}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 6200000, guid: 238c7a850b24127408d4d9582b57aa6c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
@@ -273,9 +273,9 @@ MonoBehaviour:
     m_Bits: 8
   spawnedObjects: []
   isAutoRunner: 0
-  moveSpeed: 10
-  jumpForce: 15
-  superJumpForce: 30
+  moveSpeed: 6
+  jumpForce: 14
+  superJumpForce: 10
   health: 3
   maxHealth: 3
   points: 0
@@ -310,8 +310,8 @@ MonoBehaviour:
   ScoreText: {fileID: 0}
   HighScoreText: {fileID: 0}
   _levelHighScore: {fileID: 0}
-  destroyJumpProbability: 3
-  emptyJumpProbability: 7
+  destroyJumpProbability: 5
+  emptyJumpProbability: 10
   goalDestroysObjectsProbability: 7
   originalGoalDestroysObjectsProbability: 0
   deleteObjectNumber: 4

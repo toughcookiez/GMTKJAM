@@ -1985,6 +1985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabType: 1
+  player: {fileID: 1313888546}
 --- !u!114 &878896742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2424,6 +2425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
+  player: {fileID: 1313888546}
 --- !u!114 &1109852942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2649,6 +2651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabType: 2
+  player: {fileID: 1313888546}
 --- !u!114 &1149523212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3101,6 +3104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  player: {fileID: 1313888546}
 --- !u!114 &1560648260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4018,14 +4022,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2133827509}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: jumpForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: uIManager
       value: 
       objectReference: {fileID: 752214527}
@@ -4046,20 +4042,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 650263662050580091}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: superJumpForce
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: _levelHighScore
       value: 
       objectReference: {fileID: 11400000, guid: fef8b5df9382c5b499a3683795530778, type: 2}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: prefabs.Array.size
       value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: emptyJumpProbability
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[0]'
@@ -4101,10 +4089,6 @@ PrefabInstance:
       propertyPath: 'prefabs.Array.data[9]'
       value: 
       objectReference: {fileID: 6792206462332197620, guid: 6666b28f9da7bbc43966d8f2912e594e, type: 3}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: destroyJumpProbability
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[10]'
       value: 

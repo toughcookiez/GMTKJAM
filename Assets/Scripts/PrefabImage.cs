@@ -7,7 +7,7 @@ public class PrefabImage : MonoBehaviour
     [SerializeField]
     private PrefabType prefabType;
 
-    private PlayerController player;
+    [SerializeField] private PlayerController player;
 
     private Image image;
 
@@ -15,7 +15,7 @@ public class PrefabImage : MonoBehaviour
     void Start()
     {
         image = GetComponent<Image>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        
 
         UpdateImage();
     }
@@ -44,6 +44,10 @@ public class PrefabImage : MonoBehaviour
         {
             return;
         }
+        if (image == null)
+        {
+            return;
+        }
         transform.rotation = player.nextPrefab.transform.rotation;
         image.sprite = player.nextPrefab.GetComponent<SpriteRenderer>().sprite;
     }
@@ -56,6 +60,10 @@ public class PrefabImage : MonoBehaviour
             return;
         }
         if (player.nextNextPrefab == null)
+        {
+            return;
+        }
+        if (image == null)
         {
             return;
         }
