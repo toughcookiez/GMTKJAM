@@ -77,6 +77,9 @@ public class PlayerController : MonoBehaviour
     //then probability for randomDelete will be increased
     private bool hasJumpedInThisLoop = false;
 
+    //after horizontal jumpPad player cannot move for a bit
+    private bool canMove = true;
+
     private GameObject starObject;
 
     public float destroyJumpProbability;
@@ -146,12 +149,12 @@ public class PlayerController : MonoBehaviour
         {
 
             //Move Left/Right
-            if (Input.GetKey(KeyCode.A) && !_isDead)
+            if (Input.GetKey(KeyCode.A) && !_isDead && canMove)
             {
                 rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
 
             }
-            if (Input.GetKey(KeyCode.D) && !_isDead)
+            if (Input.GetKey(KeyCode.D) && !_isDead && canMove)
             {
                 rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
 
@@ -482,6 +485,14 @@ public class PlayerController : MonoBehaviour
         }
         instance.transform.localScale = new Vector3(1, 1, 1);
     }
+
+
+    IEnumerator JumppadCooldown()
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        canMove = true;
+    }
     
 
     private void ChooseNextPrefab()
@@ -519,13 +530,20 @@ public class PlayerController : MonoBehaviour
     }
 
     //Very high jump that is performed on jumppad
-    public void SuperJump()
+    public void SuperJump(Vector2 dir)
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, superJumpForce);
+        rb.linearVelocity = new Vector2(dir.x * superJumpForce, dir.y*superJumpForce);
 
 
         //Double jump possible also after jumppad
         canDoubleJump = true;
+
+        //after horizontal superjump cannot move for a bit
+        if (dir.x != 0)
+        {
+            canMove = false;
+            StartCoroutine(JumppadCooldown());
+        }
     }
 
 

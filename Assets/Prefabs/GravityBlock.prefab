@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3488506627014765760}
   - component: {fileID: 1713476474444518995}
   - component: {fileID: 5759986334667058375}
+  - component: {fileID: 1021226315364597748}
   m_Layer: 3
   m_Name: GravityBlock
   m_TagString: Block
@@ -190,3 +191,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _breakColor: {r: 0.7254902, g: 0.43137258, b: 0.32941177, a: 0}
+--- !u!114 &1021226315364597748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794475554348727379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872ca96c17cd2444db2a096c2c4822bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 10

@@ -12,7 +12,7 @@ public class Jumpable : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,9 +22,9 @@ public class Jumpable : MonoBehaviour
     }
 
 
-    public void Jump()
+    public void Jump(Vector2 dir)
     {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        rb.linearVelocity = new Vector2(dir.x*jumpForce, dir.y*jumpForce);
 
 
     }

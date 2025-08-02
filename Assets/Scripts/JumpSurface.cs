@@ -32,10 +32,10 @@ public class JumpSurface : MonoBehaviour
     {
         if (isActive && other.gameObject.CompareTag("Player"))
         {
-            other.GetComponent<PlayerController>().SuperJump();
+            other.GetComponent<PlayerController>().SuperJump(dir);
         }else if (isActive && other.gameObject.GetComponent<Jumpable>()!=null) 
         {
-            other.GetComponent<Jumpable>().Jump();
+            other.gameObject.GetComponent<Jumpable>().Jump(dir);
         }
     }
 
