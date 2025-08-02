@@ -17,6 +17,9 @@ public class HealthUpdater : MonoBehaviour
         }
         else if (controller.health == 2)
         {
+            Hearts[1].SetActive(true);
+            Hearts[0].SetActive(true);
+
             Hearts[2].SetActive(false);
         }
         else if (controller.health == 1)
@@ -24,11 +27,17 @@ public class HealthUpdater : MonoBehaviour
             Hearts[2].SetActive(false);
             Hearts[1].SetActive(false);
         }
-        else
+        else if (controller.health == 0) 
         {
             Hearts[2].SetActive(false);
             Hearts[1].SetActive(false);
             Hearts[0].SetActive(false);
+        }
+        else
+        {
+            Hearts[2].SetActive(true);
+            Hearts[1].SetActive(true);
+            Hearts[0].SetActive(true);
         }
 
     }
