@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Bridge.unity
     guid: 73f79948821d2c6458749a7c6d6e709f
+  - enabled: 1
+    path: Assets/Scenes/Levels/Pyramids.unity
+    guid: cbb150b20109b804993b58d35cd0475c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

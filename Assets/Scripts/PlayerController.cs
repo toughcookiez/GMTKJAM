@@ -24,6 +24,8 @@ public class PlayerController : MonoBehaviour
     public float superJumpForce = 500;
 
 
+
+    public float damageFlashTime = .3f;
     public float health = 3;
     public float maxHealth = 3;
 
@@ -328,7 +330,18 @@ public class PlayerController : MonoBehaviour
         {
             PlayerDies();
         }
+ 
+            StartCoroutine(DamageFlash());
+        
 
+    }
+
+    private IEnumerator DamageFlash()
+    {
+        Color OGcolor = GetComponent<SpriteRenderer>().color;
+        GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(damageFlashTime);
+        GetComponent<SpriteRenderer>().color = OGcolor;
     }
 
     public void GoalReached()
