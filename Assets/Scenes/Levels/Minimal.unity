@@ -2151,8 +2151,12 @@ PrefabInstance:
       value: 14.51
       objectReference: {fileID: 0}
     - target: {fileID: 2482320559321162440, guid: b9eb1ffba3a2622449595f8a9e0b966c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 2482320559321162440, guid: b9eb1ffba3a2622449595f8a9e0b966c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.43
+      value: 11.31
       objectReference: {fileID: 0}
     - target: {fileID: 2538922607852227204, guid: b9eb1ffba3a2622449595f8a9e0b966c, type: 3}
       propertyPath: Items.Array.size
@@ -2363,6 +2367,10 @@ PrefabInstance:
     - target: {fileID: 6615266294250231020, guid: d489c299ab0dfa64285ce35156bda593, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 6615266294250231020, guid: d489c299ab0dfa64285ce35156bda593, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
