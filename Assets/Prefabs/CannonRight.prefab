@@ -106,7 +106,7 @@ MonoBehaviour:
   dir: {x: 1, y: 0}
   timeBetweenShots: 4
   bulletSpeed: 7
-  bulletPrefab: {fileID: 4577498266949743154, guid: 4873fe700e75f7d46afdd96b6624f49a, type: 3}
+  bulletPrefab: {fileID: 4577498266949743154, guid: 0d8e108af7148814bacd8802e1d8ff40, type: 3}
 --- !u!50 &3052604127281572686
 Rigidbody2D:
   serializedVersion: 5

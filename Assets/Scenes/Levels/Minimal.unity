@@ -4629,6 +4629,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 209922206}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: uIManager
       value: 
       objectReference: {fileID: 149218353}
