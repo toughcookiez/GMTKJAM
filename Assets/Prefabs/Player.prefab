@@ -275,7 +275,7 @@ MonoBehaviour:
   spawnedObjects: []
   isAutoRunner: 0
   moveSpeed: 6
-  jumpForce: 14
+  jumpForce: 16
   superJumpForce: 10
   health: 3
   maxHealth: 3

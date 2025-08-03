@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviour
 
     public float health = 3;
     public float maxHealth = 3;
+
+    private Animator animator;
 
     public float points = 0;
 
@@ -116,6 +119,7 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
         LoseScreen.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
 
@@ -146,7 +150,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    
+
+        animator.SetBool("Grounded", IsGrounded());
+
+        animator.SetFloat("Velocity", rb.linearVelocityX);
+
+        animator.SetFloat("VerticalVelocity", rb.linearVelocityY);
+
+
         if (!isAutoRunner)
         {
 
@@ -154,12 +165,13 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.A) && !_isDead && canMove)
             {
                 rb.linearVelocity = new Vector2(-moveSpeed, rb.linearVelocity.y);
+                GetComponent<SpriteRenderer>().flipX = true;
 
             }
             if (Input.GetKey(KeyCode.D) && !_isDead && canMove)
             {
                 rb.linearVelocity = new Vector2(moveSpeed, rb.linearVelocity.y);
-
+                GetComponent<SpriteRenderer>().flipX = false;
             }
 
 
@@ -258,6 +270,8 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
+
+        animator.SetTrigger("Jump");
 
         UseCurrentCard();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -544,6 +558,7 @@ public class PlayerController : MonoBehaviour
         {
             return false;
         }
+        
     }
 
     //Very high jump that is performed on jumppad
