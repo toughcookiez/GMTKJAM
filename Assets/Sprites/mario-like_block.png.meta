@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      mario-like_block_0: 8093306289257987647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
