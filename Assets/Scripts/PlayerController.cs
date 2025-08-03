@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private AudioSource source;
 
-    public AudioClip jump, hurt;
+    public AudioClip jump, hurt, coin;
 
     //List of all Objects that were Spawned by the player
     public List<GameObject> spawnedObjects = new List<GameObject>();
@@ -123,9 +123,12 @@ public class PlayerController : MonoBehaviour
 
     public UIManager uIManager;
 
+    private Color OGcolor;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        OGcolor = GetComponent<SpriteRenderer>().color;
         animator = GetComponent<Animator>();
         LoseScreen.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
@@ -347,7 +350,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator DamageFlash()
     {
-        Color OGcolor = GetComponent<SpriteRenderer>().color;
+        
         GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(damageFlashTime);
         GetComponent<SpriteRenderer>().color = OGcolor;

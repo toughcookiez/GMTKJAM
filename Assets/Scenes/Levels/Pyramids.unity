@@ -3376,7 +3376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3167970272048896346, guid: d489c299ab0dfa64285ce35156bda593, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4569891522841458929, guid: d489c299ab0dfa64285ce35156bda593, type: 3}
       propertyPath: m_Pivot.x
