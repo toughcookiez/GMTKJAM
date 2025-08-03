@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      antigravity_block_0: 2222269666266831371
+      antigravity_block_1: -4298753364211729774
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
