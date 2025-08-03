@@ -9,11 +9,16 @@ using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using static Unity.VisualScripting.Member;
 using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerController : MonoBehaviour
 {
     public LayerMask groundLayer;
+
+    private AudioSource source;
+
+    public AudioClip jump, hurt;
 
     //List of all Objects that were Spawned by the player
     public List<GameObject> spawnedObjects = new List<GameObject>();
@@ -143,6 +148,8 @@ public class PlayerController : MonoBehaviour
 
 
         ChooseNextCard();
+
+        source = GetComponent<AudioSource>();
 
 
     }
@@ -274,6 +281,7 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetTrigger("Jump");
+        source.PlayOneShot(jump);
 
         UseCurrentCard();
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -326,6 +334,7 @@ public class PlayerController : MonoBehaviour
     public void PlayerHit()
     {
         health--;
+        source.PlayOneShot(hurt);
         if (health <= 0)
         {
             PlayerDies();
