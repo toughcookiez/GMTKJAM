@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     //Height unter which player dies because he fell into pit
     public float deathHeight = -20;
 
-    public GameObject[] prefabs = new GameObject[3];
+    public List<WeightObject> prefabs = new List<WeightObject>();
 
     public GameObject nextPrefab;
     public GameObject nextNextPrefab;
@@ -132,6 +132,8 @@ public class PlayerController : MonoBehaviour
         destroyRadius.enabled = false;
 
         originalGoalDestroysObjectsProbability = goalDestroysObjectsProbability;
+
+        prefabs.Sort((o1, o2) => o1.weight.CompareTo(o2.weight));
 
 
         ChooseNextCard();
@@ -423,12 +425,12 @@ public class PlayerController : MonoBehaviour
         if (rand < destroyJumpProbability)
         {
             nextPrefab = nextNextPrefab ?? destroyJumpPrefab;
-            nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : destroyJumpPrefab;
+            nextNextPrefab = nextNextPrefab == null ? WeightedSelection.ChooseRandom(prefabs) : destroyJumpPrefab;
         }
-        else if (rand < emptyJumpProbability)
+        else if (rand  < (emptyJumpProbability + destroyJumpProbability))
         {
             nextPrefab = nextNextPrefab ?? emptyJumpPrefab;
-            nextNextPrefab = nextNextPrefab == null ? prefabs[Random.Range(0, prefabs.Length)] : emptyJumpPrefab;
+            nextNextPrefab = nextNextPrefab == null ? WeightedSelection.ChooseRandom(prefabs) : emptyJumpPrefab;
         } 
         else
         {
@@ -499,8 +501,8 @@ public class PlayerController : MonoBehaviour
 
     private void ChooseNextPrefab()
     {
-        nextPrefab = nextNextPrefab != null? nextNextPrefab : prefabs[Random.Range(0, prefabs.Length)];
-        nextNextPrefab = prefabs[Random.Range(0, prefabs.Length)];
+        nextPrefab = nextNextPrefab != null? nextNextPrefab : WeightedSelection.ChooseRandom(prefabs);
+        nextNextPrefab = WeightedSelection.ChooseRandom(prefabs);
     }
 
     private void RespawnPlayer()
