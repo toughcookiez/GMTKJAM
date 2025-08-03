@@ -104,7 +104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   coinAmount: 20
-  coin: {fileID: 8300000, guid: eaf6846b4655c554fbdbf6b254feee4f, type: 3}
 --- !u!61 &8793492993512994203
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -275,6 +275,7 @@ MonoBehaviour:
     m_Bits: 8
   jump: {fileID: 8300000, guid: 70a435324b67f214e8b1afe82e7c2102, type: 3}
   hurt: {fileID: 8300000, guid: d7d7dabd737550e4a885d03dfd2ad952, type: 3}
+  coin: {fileID: 0}
   spawnedObjects: []
   isAutoRunner: 0
   moveSpeed: 5
