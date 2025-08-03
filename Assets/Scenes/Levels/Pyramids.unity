@@ -303,7 +303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 23.000122, y: -38.999817}
+  m_AnchoredPosition: {x: 46.699936, y: -38.999817}
   m_SizeDelta: {x: 100, y: 140}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &9816574
@@ -3835,7 +3835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 25.399963, y: -67.299866}
+  m_AnchoredPosition: {x: 49.099777, y: -67.299866}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &542934163
@@ -4187,11 +4187,11 @@ PrefabInstance:
     - target: {fileID: 1585661311881351373, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: d1ef5bc6498d7e84081a4c4df22a6ef2, type: 3}
+      objectReference: {fileID: 8300000, guid: d5fb987bdd406cd4eb01d66d1e51ddc3, type: 3}
     - target: {fileID: 1585661311881351373, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d1ef5bc6498d7e84081a4c4df22a6ef2, type: 3}
+      objectReference: {fileID: 8300000, guid: d5fb987bdd406cd4eb01d66d1e51ddc3, type: 3}
     - target: {fileID: 2237172235965834920, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4407,7 +4407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243, y: -243}
+  m_AnchoredPosition: {x: 243, y: -237}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1189466504
@@ -5194,7 +5194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -63.69983, y: -8.000061}
+  m_AnchoredPosition: {x: -40, y: -8.000061}
   m_SizeDelta: {x: 100, y: 140}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1706973408
@@ -5582,7 +5582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -63.499817, y: -53}
+  m_AnchoredPosition: {x: -39.800003, y: -53}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &2075041403

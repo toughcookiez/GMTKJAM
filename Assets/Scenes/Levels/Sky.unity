@@ -2234,11 +2234,11 @@ PrefabInstance:
     - target: {fileID: 1585661311881351373, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: d1ef5bc6498d7e84081a4c4df22a6ef2, type: 3}
+      objectReference: {fileID: 8300000, guid: d324ba9576d96724488127620a204f0c, type: 3}
     - target: {fileID: 1585661311881351373, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d1ef5bc6498d7e84081a4c4df22a6ef2, type: 3}
+      objectReference: {fileID: 8300000, guid: d324ba9576d96724488127620a204f0c, type: 3}
     - target: {fileID: 2237172235965834920, guid: d9b7ae58b35e9ee44ba2dd77a6b33f32, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3270,12 +3270,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3542,11 +3542,11 @@ RectTransform:
   - {fileID: 300750394}
   m_Father: {fileID: 1567581007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: 80}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 242, y: -227}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1640768039
 MonoBehaviour:
   m_ObjectHideFlags: 0
