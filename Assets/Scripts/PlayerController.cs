@@ -466,11 +466,24 @@ public class PlayerController : MonoBehaviour
             hasEmptyJump = false;
             return;
         }
-        GameObject instance = Instantiate(nextPrefab);
-        instance.transform.position = rb.position;
-        StartCoroutine(ScalePrefab(instance,.2f));
+        if (nextPrefab != null)
+        {
+            GameObject instance = Instantiate(nextPrefab);
+            instance.transform.position = rb.position;
+            StartCoroutine(ScalePrefab(instance, .2f));
 
-        spawnedObjects.Add(instance);
+            spawnedObjects.Add(instance);
+
+        }
+        else
+        {
+            GameObject instance = WeightedSelection.ChooseRandom(prefabs);
+            instance.transform.position = rb.position;
+            StartCoroutine(ScalePrefab(instance, .2f));
+
+            spawnedObjects.Add(instance);
+        }
+
 
 
     }

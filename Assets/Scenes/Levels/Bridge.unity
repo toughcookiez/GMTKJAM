@@ -3261,26 +3261,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5668724363433528798, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: m_GravityScale
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5668724363433528798, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: m_LinearDamping
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: ScoreText
       value: 
       objectReference: {fileID: 942326428}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: jumpForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: uIManager
       value: 
@@ -3301,10 +3285,6 @@ PrefabInstance:
       propertyPath: nextNextPrefab
       value: 
       objectReference: {fileID: 6512513433034967391, guid: 5e42511f6c6ee3e4fb8aa1d420424983, type: 3}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: superJumpForce
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: _levelHighScore
       value: 

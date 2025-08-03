@@ -4014,14 +4014,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2133827509}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: jumpForce
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: uIManager
       value: 
       objectReference: {fileID: 752214527}
@@ -4042,16 +4034,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 650263662050580091}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
-      propertyPath: superJumpForce
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: _levelHighScore
       value: 
       objectReference: {fileID: 11400000, guid: fef8b5df9382c5b499a3683795530778, type: 2}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: prefabs.Array.size
-      value: 13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6024620314890891436, guid: b52178738993ced4c94fc27eeaa79480, type: 3}
       propertyPath: 'prefabs.Array.data[0]'
