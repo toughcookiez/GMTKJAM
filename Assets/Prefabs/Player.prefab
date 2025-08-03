@@ -317,9 +317,9 @@ MonoBehaviour:
   ScoreText: {fileID: 0}
   HighScoreText: {fileID: 0}
   _levelHighScore: {fileID: 0}
-  destroyJumpProbability: 5
+  destroyJumpProbability: 9
   emptyJumpProbability: 10
-  goalDestroysObjectsProbability: 7
+  goalDestroysObjectsProbability: 10
   originalGoalDestroysObjectsProbability: 0
   deleteObjectNumber: 4
   rb: {fileID: 0}

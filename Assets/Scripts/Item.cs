@@ -6,6 +6,14 @@ public class Item : MonoBehaviour
 
     [SerializeField] public float coinAmount = 10;
 
+    private PlayerController player;
+
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,6 +40,17 @@ public class Item : MonoBehaviour
 
 
             }
+        } 
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Harmful") || collision.CompareTag("Block") || collision.CompareTag("SpawnObject"))
+        {
+            Destroy(collision.gameObject);
+            GameObject breakEffect = Instantiate(player.BlockBreakEffect, collision.gameObject.transform.position, Quaternion.identity);
+            breakEffect.GetComponent<ParticleSystem>().startColor = collision.gameObject.GetComponent<BlockColor>()._breakColor;
         }
     }
 
