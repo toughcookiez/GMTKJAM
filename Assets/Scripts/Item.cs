@@ -5,14 +5,15 @@ public class Item : MonoBehaviour
     public ItemType Type;
 
     [SerializeField] public float coinAmount = 10;
-    private AudioSource source;
 
-    public AudioClip coin;
+    private PlayerController player;
 
-    private void Start()
+
+    void Start()
     {
-        source = GetComponent<AudioSource>();
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +22,6 @@ public class Item : MonoBehaviour
             switch (Type)
             {
                 case ItemType.Heart:
-                    source.PlayOneShot(coin);
                     if (collision.GetComponent<PlayerController>().health == collision.GetComponent<PlayerController>().maxHealth)
                     {
                         Destroy(gameObject);
@@ -32,7 +32,7 @@ public class Item : MonoBehaviour
                     Destroy(gameObject);
                     break;
                 case ItemType.Coin:
-                    source.PlayOneShot(coin);
+
                     collision.GetComponent<PlayerController>().points += coinAmount;
                     Destroy(gameObject);
                     break;
@@ -40,6 +40,17 @@ public class Item : MonoBehaviour
 
 
             }
+        } 
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Harmful") || collision.CompareTag("Block") || collision.CompareTag("SpawnObject"))
+        {
+            Destroy(collision.gameObject);
+            GameObject breakEffect = Instantiate(player.BlockBreakEffect, collision.gameObject.transform.position, Quaternion.identity);
+            breakEffect.GetComponent<ParticleSystem>().startColor = collision.gameObject.GetComponent<BlockColor>()._breakColor;
         }
     }
 

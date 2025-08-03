@@ -220,14 +220,16 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
+        
+
 
         //Respawn 
-        //if (Input.GetKeyDown(KeyCode.R))
-        //{
+        if (Input.GetKeyDown(KeyCode.R))
+        {
 
-        //    PlayerHit();
-        //    RespawnPlayer();
-        //}
+            PlayerHit();
+            RespawnPlayer();
+        }
 
         //if player falls into pit they die
       /*  if (rb.position.y < deathHeight)
