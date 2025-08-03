@@ -329,12 +329,14 @@ public class PlayerController : MonoBehaviour
             {
                 if (obj.transform.childCount == 0)
                 {
-                    Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                  GameObject itemInstance=  Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                    itemInstance.transform.parent = obj.transform;
                 }
                 else 
                 {
-                    Destroy(obj.transform.GetChild(0).gameObject);
-                    Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                     Destroy(obj.transform.GetChild(0).gameObject);
+                    GameObject itemInstance = Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
+                    itemInstance.transform.parent = obj.transform;
                 }
             }
         }

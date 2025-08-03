@@ -4,7 +4,7 @@ public class Item : MonoBehaviour
 {
     public ItemType Type;
 
-    [SerializeField] private float coinAmount = 10;
+    [SerializeField] public float coinAmount = 10;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -20,6 +20,7 @@ public class Item : MonoBehaviour
                         return;
                     }
                     collision.GetComponent<PlayerController>().health += 1;
+                    collision.GetComponent<PlayerController>().points += coinAmount;
                     Destroy(gameObject);
                     break;
                 case ItemType.Coin:

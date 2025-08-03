@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 0
-  coinAmount: 10
+  coinAmount: 20
 --- !u!61 &8793492993512994203
 BoxCollider2D:
   m_ObjectHideFlags: 0
