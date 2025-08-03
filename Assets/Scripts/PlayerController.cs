@@ -348,9 +348,9 @@ public class PlayerController : MonoBehaviour
                 }
                 else 
                 {
-                     Destroy(obj.transform.GetChild(0).gameObject);
+                     /*Destroy(obj.transform.GetChild(0).gameObject);
                     GameObject itemInstance = Instantiate(itemsManager.Items[Random.Range(0, itemsManager.Items.Length)], obj.transform.position, Quaternion.identity);
-                    itemInstance.transform.parent = obj.transform;
+                    itemInstance.transform.parent = obj.transform;*/
                 }
             }
         }
