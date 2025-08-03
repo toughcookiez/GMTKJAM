@@ -34,11 +34,17 @@ public class UIManager : MonoBehaviour
         if (_transitionAnimator != null)
         {
             //trigger Transition
+               
+            _transitionAnimator.SetTrigger("End");
             if (_audioSource != null)
             {
-                _audioSource.volume -= .1f;
-            }    
-            _transitionAnimator.SetTrigger("End");
+                while (_audioSource.volume > 0.1f) 
+                {
+                    _audioSource.volume -= 0.1f;
+                    yield return null;
+                }
+            }
+            
         }  
         yield return new WaitForSeconds(.8f);
         SceneManager.LoadScene(_targetScene);
